@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Notion 댓글 피드백</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Notion 댓글 위젯</title>
+
   <style>
     body {
       margin: 0;
       padding: 0;
     }
 
+    #container {
+      height: 700px; /* 필요시 더 크게 조정 */
+      width: 100%;
+      overflow: auto;
+      box-sizing: border-box;
+      padding: 16px;
+    }
+
     #cusdis_thread {
-      min-height: 600px; /* ← 필요시 더 크게 조정 */
-    } 
-</style>
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
 <body>
-  <h2>💬 댓글을 남겨주세요</h2>
+  <div id="container">
+    <h2>💬 댓글을 남겨주세요</h2>
 
-  <div id="cusdis_thread"
-       data-host="https://cusdis.com"
-       data-app-id="086edc38-0fe7-4d18-ac61-eeefae916430"
-       data-page-id="temp1-23a624a3544480f4bf7eda32156ce46f"
-       data-page-url="https://swkwrk.notion.site/temp1-23a624a3544480f4bf7eda32156ce46f?source=copy_link"
-       data-page-title="comment temp">
+    <div id="cusdis_thread"
+        data-host="https://cusdis.com"
+        data-app-id="086edc38-0fe7-4d18-ac61-eeefae916430"
+        data-page-id="temp1-23a624a3544480f4bf7eda32156ce46f"
+        data-page-url="https://swkwrk.notion.site/temp1-23a624a3544480f4bf7eda32156ce46f?source=copy_link"
+        data-page-title="comment temp">
+    </div>
   </div>
 
   <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
